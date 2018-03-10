@@ -15,9 +15,9 @@ class Run(object):
 
             if online:
                 print ("STATUS %s ==> ONLINE\n"%ip,online.group())     
-            if destInaccesible:
+            elif destInaccesible:
                 print ("STATUS %s==> destInaccesible "%ip,destInaccesible.group())     
-            if agotado:
+            elif agotado:
                 print ("STATUS %s==> Host OFFLINE\n"%ip,agotado.group())
 
 ip = '192.168.1.1'
